@@ -11,15 +11,15 @@ public class Client implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nom;
-    private String prenom;
+    private String firsttName;
+    private String lastName;
     private String email;
-    private String adresse;
-    private String tel;
+    private String address;
+    private String phoneNumber;
     @ManyToOne
-    private Ville ville;
+    private City city;
     @OneToMany(mappedBy = "client")
-    private List<Commande> commandes;
+    private List<Command> commands;
 
     public Client() {
     }
