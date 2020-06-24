@@ -1,10 +1,10 @@
 package com.example.ecommerce.bean;
 
 import javax.persistence.*;
-import java.util.List;
+import java.io.Serializable;
 
 @Entity
-public class Category {
+public class Category implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
