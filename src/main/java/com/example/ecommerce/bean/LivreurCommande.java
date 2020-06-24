@@ -15,7 +15,7 @@ public class LivreurCommande implements Serializable {
     private Commande commande;
     @ManyToOne
     private Utilisateur utilisateur;
-    private Date dateEnvoie;  //date de reception de la commande par le livreur
+    private Date dateEnvoie;  //date de reception de la commande par le livreur.
     private  Date dateLivraison ;
 
     public LivreurCommande() {
